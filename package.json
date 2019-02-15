@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://gkeglevich.github.io/website",
+  "homepage": "https://gkeglevich.github.io",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
