@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "homepage": "https://gkeglevich.github.io",
   "private": true,
+  "engines": {
+    "npm": "5.6.0",
+    "node": "9.11.1"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.1",
@@ -16,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --branch master"
+    "deploy": "gh-pages -d build -b master"
   },
   "eslintConfig": {
     "extends": "react-app"
