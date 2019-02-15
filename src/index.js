@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './Components/Home/Home.jsx'
+import DocumentTitle from 'react-document-title';
 import * as serviceWorker from './serviceWorker';
+import Home from './Components/Home/Home.jsx'
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Home />
-  </BrowserRouter>,
-  document.getElementById('root')
+  <DocumentTitle title="Griffin Keglevich">
+    <BrowserRouter>
+      <Home />
+    </BrowserRouter>
+  </DocumentTitle>,
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
