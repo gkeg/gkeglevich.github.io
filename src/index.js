@@ -4,15 +4,20 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DocumentTitle from 'react-document-title';
+import Favicon from 'react-favicon';
 import * as serviceWorker from './serviceWorker';
 import Home from './Components/Home/Home.jsx'
 
 ReactDOM.render(
-  <DocumentTitle title="Griffin Keglevich">
-    <BrowserRouter>
-      <Home />
-    </BrowserRouter>
-  </DocumentTitle>,
+  <div>
+    <DocumentTitle title="Griffin Keglevich">
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>
+    </DocumentTitle>
+  </div>
+  ,
+
   document.getElementById('root'),
 );
 
