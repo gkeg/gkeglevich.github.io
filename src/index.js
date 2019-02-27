@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DocumentTitle from 'react-document-title';
-import Favicon from 'react-favicon';
 import * as serviceWorker from './serviceWorker';
 import Home from './Components/Home/Home.jsx'
 import MetaTags from 'react-meta-tags';
@@ -12,9 +11,8 @@ import MetaTags from 'react-meta-tags';
 ReactDOM.render(
   <div class="wrapper">
     <MetaTags>
-      <meta name="description" content="The personal website of Griffin Keglevich"./>
+      <meta name="description" content="The personal website of Griffin Keglevich"/>
     </MetaTags>
-      <Favicon href="../public/favicon.ico"/>
       <DocumentTitle title="Griffin Keglevich">
         <BrowserRouter>
           <Home />
