@@ -13,8 +13,7 @@ class Main extends Component {
           </div>
           {/* Nav Bar */}
           <div className="table">
-            <nav id="nav-bar" className="cl-effect-9">
-              <a className="link" href="https://github.com/gkeglevich" target="_blank" className="link"><span>GITHUB</span><span>For some projects</span></a>
+            <nav id="nav-bar" className="cl-effect-9"> <a className="link" href="https://github.com/gkeglevich" target="_blank" className="link"><span>GITHUB</span><span>For some projects</span></a>
               <a className="link" href="https://www.linkedin.com/in/griffinkeglevich/" target="_blank" className="link"><span>LINKEDIN</span><span>For some particulars</span></a>
               <a className="link" href="https://medium.com/@griffinkeglevich" target="_blank"><span>MEDIUM</span><span>For some thoughts</span></a>
             </nav>
