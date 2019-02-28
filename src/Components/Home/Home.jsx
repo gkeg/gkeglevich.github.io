@@ -108,12 +108,8 @@ class Main extends Component {
       particles = [];
 
       // Set the amount of pixels if we're on a mobile device accordingly
-      let factor = ww;
-      if (isMobileDevice()) {
-        factor /= 2;
-      }
-      for(var i=0; i<factor; i+=Math.round(ww/(distance*4))) {
-        for (var j=0;j<factor;j+=Math.round(ww/(distance*4))) {
+      for(var i=0; i<ww; i+=Math.round(ww/(distance*4))) {
+        for (var j=0;j<wh;j+=Math.round(wh/(distance*4))) {
           if (data[((i + j*ww)*4) + 3] > distance) {
             particles.push(new Particle(i,j));
           }
