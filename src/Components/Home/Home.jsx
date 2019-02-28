@@ -85,6 +85,11 @@ class Main extends Component {
 
     }
 
+    // Helps determine if we're on a mobile device --> Affects the number of pixels
+    function isMobileDevice() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
+
     function initScene(){
       ww = canvas.width = window.innerWidth;
       wh = canvas.height = window.innerHeight;
@@ -101,8 +106,14 @@ class Main extends Component {
 
       const distance = 50;
       particles = [];
-      for(var i=0; i<ww; i+=Math.round(ww/(distance*4))) {
-        for (var j=0;j<wh;j+=Math.round(ww/(distance*4))) {
+
+      // Set the amount of pixels if we're on a mobile device accordingly
+      let factor = ww;
+      if (isMobileDevice()) {
+        factor /= 2;
+      }
+      for(var i=0; i<factor; i+=Math.round(ww/(distance*4))) {
+        for (var j=0;j<factor;j+=Math.round(ww/(distance*4))) {
           if (data[((i + j*ww)*4) + 3] > distance) {
             particles.push(new Particle(i,j));
           }
